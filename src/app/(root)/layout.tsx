@@ -2,7 +2,9 @@ import { ClerkProvider } from '@clerk/nextjs'
 import '../globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
-import { UserButton } from "@clerk/nextjs";
+import Navbar from '@/components/Navbar'
+
+
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -18,11 +20,15 @@ export default function RootLayout({
 }) {
   return (
     <ClerkProvider>
-      {/* the signout button will be in the navbar  */}
+      
      
       <html lang="en">
         <body className={inter.className}>
-        <UserButton afterSignOutUrl="/"/> 
+          {/* the signout button will be in the navbar  */}
+      
+        <Navbar/>
+       
+       
           {children}
           </body>
       </html>
