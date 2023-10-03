@@ -11,3 +11,7 @@ Target:
 ## authentication
 
 Authentication is implemented using the clerk.
+
+## database mongo db
+
+## validations by zod
