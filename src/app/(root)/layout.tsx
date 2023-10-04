@@ -19,19 +19,20 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <ClerkProvider>
+   
       
-     
+    <ClerkProvider>
       <html lang="en">
         <body className={inter.className}>
           {/* the signout button will be in the navbar  */}
       
+        
         <Navbar/>
        
        
           {children}
           </body>
       </html>
-    </ClerkProvider>
+      </ClerkProvider>
   )
 }

@@ -12,6 +12,10 @@ Target:
 
 Authentication is implemented using the clerk.
 
-## database mongo db
+## database mongo db connect
 
 ## validations by zod
+
+## create the model
+
+## Create the api of the Course (under the protected routes of the auth )
