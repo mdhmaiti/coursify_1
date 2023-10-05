@@ -2,6 +2,7 @@ import mongoose from 'mongoose'
 
 
 const courseSchema = new mongoose.Schema({
+  userId:{type:String},
     course_name: {
       type: String,
       required: true,
